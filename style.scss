@@ -1,13 +1,18 @@
 $text-color : #6126f0;
 $base-color: #e3e4e8;
+$normal-color:#686a70;
 
+.main-body
+{
+    display: flex;
+    justify-content: center;
+}
 .container
 {
     border: 2px solid $base-color;
     border-radius: 5px;
     height: 550px;
-    width: 900px;
-    margin-left: 15%;
+    width: 700px;
     display: flex;
     .aside
     {
@@ -31,14 +36,19 @@ $base-color: #e3e4e8;
             margin-left: 4%;
             .input-class
             {
-                border-radius: 5px;  
-                padding: 1%;
+                border-color: $base-color;
+                border-radius: 3px;  
+                padding: 2%;
                 width: 40%
             }
              .username
             {
                 @extend .input-class;
-                width: 84%;
+                width: 87%;
+            }
+            span
+            {
+                color: $normal-color;
             }
             
         }
@@ -58,8 +68,10 @@ $base-color: #e3e4e8;
             background-color: $text-color;
             padding: 1%;
             border-radius: 5px;
-            width: 10%;
-            margin-left: 55% ;
+            width: 20%;
+            margin-left: 80% ;
+           
+            
            
         }
     }
@@ -93,6 +105,28 @@ $base-color: #e3e4e8;
    
 }
 
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    // height: 550px;
+    color: $normal-color;
+    select
+    {
+        border: none;
+        background-color: transparent;
+        color: $normal-color;
+    }
+    .right
+    {
+        display: flex;
+        justify-content: space-around;
+        margin-left: -20%;
+    }
+   
+    
+}
+
 
 
 // Sign-in
@@ -100,13 +134,11 @@ $base-color: #e3e4e8;
 .container-sign-in
 {
     padding: 5%;
-    margin-left: 25%;
     margin-top: 5%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 30%;
-    
     border: 1px solid $base-color;
     border-radius: 10px;
     .wrapper-1
@@ -121,8 +153,9 @@ $base-color: #e3e4e8;
         {
             padding: 3%;
             width: 100%;
-            border-radius: 10px ; 
-            border: none;
+            border-color: $base-color;
+            border-radius: 3px; 
+          
         }
     }
    
@@ -132,6 +165,10 @@ $base-color: #e3e4e8;
         {
             text-decoration: none;
             color: $text-color;
+        }
+        span
+        {
+            color:$normal-color;
         }
     }
 
@@ -154,6 +191,25 @@ $base-color: #e3e4e8;
         }
 
     }
-
-
+}
+.sign-in-footer
+{
+    display: flex;
+    justify-content: space-around;
+    // height: 550px;
+    color: $normal-color;
+    select
+    {
+        border: none;
+        background-color: transparent;
+        color: $normal-color;
+    }
+    .right
+    {
+        display: flex;
+        justify-content: space-around;
+        margin-left: -50%;
+    }
+   
+    
 }
