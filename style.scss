@@ -1,6 +1,7 @@
 $text-color : #6126f0;
 $base-color: #e3e4e8;
 $normal-color:#686a70;
+$text-light: #fff;
 
 .main-body
 {
@@ -11,7 +12,7 @@ $normal-color:#686a70;
 {
     border: 2px solid $base-color;
     border-radius: 5px;
-    height: 550px;
+    height: 580px;
     width: 700px;
     display: flex;
     .aside
@@ -59,21 +60,23 @@ $normal-color:#686a70;
             text-decoration: none;
             
         }
-        .right-image
+        .button-class
         {
-            float: right;
-        }
-        .button
+            display: flex;
+            justify-content: space-between;
+        
+            button
         {
             background-color: $text-color;
             padding: 1%;
             border-radius: 5px;
             width: 20%;
-            margin-left: 80% ;
-           
-            
+            color: $text-light;
            
         }
+        }
+     
+        
     }
 
 
@@ -173,21 +176,23 @@ footer
     }
 
     .wrapper-3
+
     {
+        display: flex;
+        justify-content: space-between;
         a
         {
             text-decoration: none;
             color: $text-color;
         }
         button{
-            margin-left: 95%;
+           
             background-color: $text-color;
             border: none;
             padding: 1%;
-            width: 10%;
-            
+            width: 20%;
             border-radius: 5px;
-            color: white;
+            color: $text-light;
         }
 
     }
